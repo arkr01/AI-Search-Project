@@ -6,9 +6,6 @@ game_env.py
 This file contains a class representing an Untitled Dragon Game environment. You should make use of this class in your
 solver.
 
-COMP3702 2021 Assignment 1 Support Code
-
-Last updated by njc 04/08/21
 """
 
 
