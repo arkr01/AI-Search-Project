@@ -17,10 +17,6 @@ If an output filename is provided, the sequence of actions you perform will be s
 
 When prompted for an action, type one of the available action strings (e.g. wr, wl, etc) and press enter to perform the
 entered action.
-
-COMP3702 2021 Assignment 1 Support Code
-
-Last updated by njc 28/07/21
 """
 
 
