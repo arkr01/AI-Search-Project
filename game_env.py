@@ -16,9 +16,6 @@ class GameEnv:
 
     The grid is indexed top to bottom, left to right (i.e. the top left corner has coordinates
     (0, 0) and the bottom right corner has coordinates (n_rows-1, n_cols-1)).
-
-    You may use and modify this class however you want. Note that evaluation on GradeScope will
-    use an unmodified GameEnv instance as a simulator.
     """
 
     # input file symbols
