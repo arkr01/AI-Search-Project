@@ -3,8 +3,7 @@ from game_state import GameState
 """
 game_env.py
 
-This file contains a class representing an Untitled Dragon Game environment. You should make use of this class in your
-solver.
+This file contains a class representing an Untitled Dragon Game environment.
 
 """
 
