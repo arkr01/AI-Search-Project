@@ -4,15 +4,6 @@ from game_env import GameEnv
 
 """
 Tester script.
-
-Use this script to evaluate your solution. You may modify this file if desired. When submitting to GradeScope, an
-unmodified version of this file will be used to evaluate your code.
-
-You may import methods from this file into your solution if you wish.
-
-COMP3702 2021 Assignment 1 Support Code
-
-Last updated by njc 05/08/21
 """
 
 
