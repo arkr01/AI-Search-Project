@@ -4,9 +4,6 @@ game_state.py
 This file contains a class representing an Untitled Dragon Game state. You should make use of
 this class in your solver.
 
-COMP3702 2021 Assignment 1 Support Code
-
-Last updated by njc 27/07/21
 """
 
 
