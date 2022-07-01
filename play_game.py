@@ -6,8 +6,7 @@ from solution import write_output_file
 """
 play_game.py
 
-Running this file launches an interactive game session. Becoming familiar with the game mechanics may be helpful in
-designing your solution.
+Running this file launches an interactive game session.
 
 The script takes 2 arguments:
 - input_filename, which must be a valid testcase file (e.g. one of the provided files in the testcases directory)
