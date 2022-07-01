@@ -13,17 +13,10 @@ Template file for you to implement your solution to Assignment 1.
 This file should include a 'main' method, allowing this file to be executed as a program from the
 command line.
 
-Your program should accept 3 command line arguments:
+The program accepts 3 command line arguments:
     1) input filename
     2) output filename
     3) mode (either 'ucs' or 'a_star')
-
-COMP3702 2021 Assignment 1 Support Code
-
-Last updated by njc 04/08/21
-
-REFERENCES:
-- Tutorial 3 Solutions (For Search Code)
 """
 
 
@@ -34,7 +27,7 @@ REFERENCES:
 #
 
 class StateNode:
-    """Represents any node in the game state. HEAVILY BASED OFF OF TUTORIAL 3 SOLUTION CODE."""
+    """Represents any node in the game state."""
 
     def __init__(self, env, state, actions, path_cost):
         self.env = env
@@ -89,7 +82,6 @@ def complex_weighted_manhattan_dist_heuristic(env, state):
     return h
 
 
-# Code based off of tutorial 3 solutions
 def perform_search(mode, heuristic, game_env, initial_state, verbose=True):
     """
     Performs either UCS or a_star, based on mode.
@@ -106,7 +98,6 @@ def perform_search(mode, heuristic, game_env, initial_state, verbose=True):
     # Used as indicator function to switch between UCS and A*
     is_a_star = mode == 'a_star'
 
-    # ALL CODE BELOW IS BASED OFF OF TUTORIAL 3 SOLUTION CODE
     container = [(0 + heuristic(game_env, initial_state) * is_a_star,
                   StateNode(game_env, initial_state, [], 0))]
     heapq.heapify(container)
@@ -170,15 +161,6 @@ def main(arglist):
 
     actions = []
 
-    #
-    #
-    # Code for your main method can go here.
-    #
-    # Your code should find a sequence of actions for the agent to follow to reach the goal using
-    # the search type given by 'mode', and store this sequence in 'actions'.
-    #
-    #
-    # t0 = time.time()
     t0 = timeit.default_timer()
     actions.extend(perform_search(mode, complex_weighted_manhattan_dist_heuristic, game_env,
                                   initial_state))
